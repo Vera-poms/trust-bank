@@ -17,7 +17,7 @@ const Login = () => {
             </div>
             
             <form action="/action_page.php" method="post"
-            className="border border-white px-5 py-5 flex flex-col text-lg text-white rounded-xl">
+            className="border border-white px-5 py-5 flex flex-col text-lg text-white rounded-xl mx-3">
                 <label className='text-green'>
                     Username
                 </label>

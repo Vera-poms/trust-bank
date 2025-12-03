@@ -47,7 +47,7 @@ const Navbar = ({toggleMenu}: NavbarProps) => {
 
         <img className="tablet:hidden w-6 h-5" src="/src/assets/icon-menu.svg" alt="" onClick={toggleMenu}/>
         <a href="/login"
-            className="px-10 py-2 bg-green-800 rounded-3xl text-white text-[20px] max-tablet:hidden hover:transition-transform hover:translate-x-1 hover:duration-300 hover:bg-green-700">
+            className="px-5 py-2 bg-green-800 rounded-3xl text-white text-[20px] max-tablet:hidden hover:transition-transform hover:translate-x-1 hover:duration-300 hover:bg-green-700">
             Login
         </a>
         </div>

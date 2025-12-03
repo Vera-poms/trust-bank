@@ -44,7 +44,7 @@ const MenuToggle = ({toggleMenu, isMenuOpen}: MenuProps) => {
                 </div>
 
                 <a href="/login"
-                  className="px-20 py-4 bg-green-800 rounded-r-3xl text-white text-[20px] active:transition-transform active:-translate-y-1 active:duration-300 active:bg-green-700">
+                  className="px-10 py-3 bg-green-800 rounded-r-3xl text-white text-[20px] active:transition-transform active:-translate-y-1 active:duration-300 active:bg-green-700">
                     Login
                 </a>
               </div>  

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { AxiosResponse } from 'axios';
 import type { SignupResponse, LoginResponse } from '../types/user';
-const API_BASE_URL = "https://trust-bank-api-8ak9.onrender.com/docs";
+const API_BASE_URL = "https://trust-bank-api-8ak9.onrender.com";
 
 const api = axios.create({
     baseURL: API_BASE_URL,

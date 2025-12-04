@@ -2,6 +2,7 @@ import Green from '../../assets/green_banking.webp'
 import React, { useState } from 'react'
 import { login } from '../../services/authService';
 import type { LoginResponse } from '../../types/user';
+import { useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
@@ -10,6 +11,7 @@ const Login = () => {
     const [status, setStatus] = useState('')
     const [show, setShow] = useState(false)
     const isLoading = status === 'Logging in...';
+    const navigate = useNavigate();
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -19,6 +21,7 @@ const Login = () => {
             const response: LoginResponse = await login(email, password);
 
             setStatus(`Success: ${response.message}`);
+            navigate('/user/dashboard');
         }catch(error){
             const errorMessage = (error as any).response?.data?.detail || 'An unexpected error occurred.';
             setStatus(`Error: ${errorMessage}`)
@@ -70,7 +73,7 @@ const Login = () => {
                         setShow(!show);
                     }}
                      className="">
-                        {show ? 'Show' : 'Hide'}
+                        {show ? 'Hide' : 'Show'}
                      </a>
                 </div>
                 <p className="hidden">The password is incorrect!</p>
